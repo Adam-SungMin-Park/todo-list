@@ -1,11 +1,22 @@
 
 
 
-export default function TodoList(props){
+
+export default function TodoList({todo}){
+
+
   return (
-      <>
-        <h1>todo list will go here</h1>
-      </>
+      <div className = "todoListColumn">
+        <h1>Todo List</h1>
+        {todo.map((todo) => {
+            return(
+              <div className = "todoList" key = {todo.id}>
+                <div>{todo.id}</div>
+                <div>{todo.isChecked}</div>
+              </div>
+            )
+        })}
+      </div>
 
   )
 }
