@@ -1,4 +1,4 @@
-
+import TodoItem from './todoItem';
 
 
 
@@ -10,10 +10,10 @@ export default function TodoList({todo}){
         <h1>Todo List</h1>
         {todo.map((todo) => {
             return(
-              <div className = "todoList" key = {todo.id}>
-                <div>{todo.id}</div>
-                <div>{todo.isChecked}</div>
-              </div>
+              <TodoItem
+              key = {todo.id}
+              {...todo}
+              />
             )
         })}
       </div>

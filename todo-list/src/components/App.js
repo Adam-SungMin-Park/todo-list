@@ -20,17 +20,17 @@ function App() {
     {
       id:1,
       goal:"Sleep enough",
-      isChecked:"NO"
+      isChecked: true
     },
     {
       id:2,
       goal:"Work out",
-      isChecked:"No"
+      isChecked: false
     },
     {
       id:3,
       goal:"Code",
-      isChecked:"No"
+      isChecked: true
     }
 ]
 
