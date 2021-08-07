@@ -3,8 +3,6 @@ import TodoItem from './todoItem';
 
 
 export default function TodoList({todo}){
-
-
   return (
       <div className = "todoListColumn">
         <h1>Todo List</h1>
@@ -16,6 +14,9 @@ export default function TodoList({todo}){
               />
             )
         })}
+        <div className ="addTodo">
+          <button>Add Todo</button>
+        </div>
       </div>
 
   )

@@ -2,3 +2,10 @@
   display: flex;
   justify-content: space-around;
 }
+.todoHeader {
+  display: flex;
+  gap: 1rem;
+}
+.editTodo {
+  padding: 1rem;
+}
