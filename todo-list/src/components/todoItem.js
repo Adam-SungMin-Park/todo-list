@@ -9,6 +9,9 @@ export default function TodoItem({id , goal, isChecked}){
         <h3 className = "todoNumber">{id}</h3>
         <h3 className = "todoGoal">{goal}</h3>
         <h3>{isChecked ? "yes" : "NOOO"}</h3>
+        <div className = "editTodo">
+          <button>Edit</button>
+        </div>
 
       </div>
     </div>
