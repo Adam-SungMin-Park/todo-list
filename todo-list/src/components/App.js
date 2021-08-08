@@ -6,13 +6,20 @@ import TodoListEdit from './todoListEdit';
 
 function App() {
   const [todo , setTodo] = useState(sampleTodo);
+  const [edit, setEdit] = useState();
 
 
 
   return (
     <div className = "container">
-      <TodoList todo = {todo} />
-      <TodoListEdit />
+      <TodoList
+      todo = {todo} />
+       <div className ="addTodo">
+          <button onClick = {()=>setEdit('New')}>Add Todo</button>
+        </div>
+      <TodoListEdit
+       edit = {edit}
+       />
     </div>
   )
 }
