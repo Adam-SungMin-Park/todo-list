@@ -14,9 +14,7 @@ export default function TodoList({todo}){
               />
             )
         })}
-        <div className ="addTodo">
-          <button>Add Todo</button>
-        </div>
+
       </div>
 
   )
